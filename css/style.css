@@ -1,0 +1,60 @@
+:root{
+    --background-console: #0c0c0c;
+    --background-title: #163446;
+    --color-white: #fff;
+}
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+}
+h1, h2, h3{
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.2;
+    color: var(--color-white);
+}
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.6rem;
+    margin: 1rem 0;
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5rem;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+.principal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+.container{
+    width: 80%;
+    height: 40%;
+    /* background-color: var(--background-console); */
+    border: 1px solid black;
+}
+.title{
+    background-color: var(--background-title);
+}
+.title h3{
+    margin: 0;
+    padding: 1rem;
+}
