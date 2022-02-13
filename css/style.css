@@ -2,6 +2,7 @@
     --background-console: #0c0c0c;
     --background-title: #163446;
     --color-white: #fff;
+    --color-black: #000;
 }
 html {
     font-size: 62.5%;
@@ -12,23 +13,30 @@ html {
   *:after {
     box-sizing: inherit;
 }
+/*GLOBALES*/
 h1, h2, h3{
     font-family: "Open Sans", sans-serif;
     line-height: 1.2;
-    color: var(--color-white);
+    color: var(--color-black);
 }
 h1 {
     font-size: 4rem;
 }
-
 h2 {
     font-size: 3.6rem;
     margin: 1rem 0;
 }
-
 h3 {
     font-size: 1.4rem;
     font-weight: 400;
+    color: var(--color-white);
+}
+ul{
+    list-style: none;
+}
+li{
+    color: var(--color-white);
+    text-align: center;
 }
 body{
     font-family: "Roboto", sans-serif;
@@ -42,14 +50,15 @@ body::-webkit-scrollbar {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    flex-direction: column;
+    gap: 1rem;
+    height: 90vh;
     width: 100vw;
 }
 .container{
     width: 80%;
     height: 40%;
-    /* background-color: var(--background-console); */
-    border: 1px solid black;
+    background-color: var(--background-console);
 }
 .title{
     background-color: var(--background-title);
@@ -57,4 +66,35 @@ body::-webkit-scrollbar {
 .title h3{
     margin: 0;
     padding: 1rem;
+}
+.cmd p{
+    color: var(--color-white);
+    margin: .5rem 0;
+}
+.cmd p:last-of-type{
+    margin-top: 2.5rem;
+}
+/*FOOTER*/
+.footer{
+    background: linear-gradient(90deg, #1c3643, #273b47 25%, #1e5372);
+    height: 10vh;
+}
+.container-contacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.contacto{
+    display: flex;
+    
+}
+.contacto li{
+    margin-right: 2rem;
+}
+.contacto .nombre{
+    margin-top: .8rem;
+}
+.contacto .github{
+    font-size: 3rem;
 }
